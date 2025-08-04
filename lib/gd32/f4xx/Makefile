@@ -14,6 +14,7 @@ TGT_CFLAGS +=  -W -Wall -mcpu=cortex-m4 -mthumb
 TGT_CFLAGS +=  -ffunction-sections -fdata-sections
 TGT_CFLAGS +=  -D GD32F470 -D USE_STDPERIPH_DRIVER
 TGT_CFLAGS +=  -D STM32F4
+TGT_CFLAGS +=  -mfloat-abi=hard  -march=armv7e-m  -mfpu=fpv4-sp-d16
 TGT_CFLAGS +=   $(INC_FLAGS) -Os -std=gnu11
 TGT_CFLAGS      += $(DEBUG_FLAGS)
 # ARFLAGS	= rcsv
